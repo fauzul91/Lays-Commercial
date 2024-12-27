@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #E72E33;
+    --secondary-color: #FFD900;
+    --accent-color: #613223;
+    --text-color: #333333;
+    --text-color-2: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: var(--text-color-2);
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+    color: var(--text-color-2);
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0 15px 0;
+    background-color: #F33F43;
+}
+
+/* Navbar Start */
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-box .logo {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-box .logo h1 {
+    font-size: 1.75rem;
+}
+
+.navbar-box .logo img {
+    width: 3.8rem;
+    height: 3rem;
+}
+
+.navbar-box .menu {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;    
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.navbar-box .menu li a {
+    text-decoration: none;
+    color: var(--text-color-2);
+}
+
+.navbar-box .menu li a:hover {
+    color: var(--secondary-color);
+}
+
+.navbar-box .ri-menu-3-line {
+    display: none;
+}
+/* Navbar Ends */
+
+/* Hero Start */
+.hero {
+    background-color: var(--primary-color);
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.hero-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-box .hero-content h1{
+    margin-top: 6rem;
+    font-size: 3rem;
+    line-height: 120%;
+}
+
+.hero-box .hero-content p{
+    font-size: 80%;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.hero-box .hero-content a {
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    background-color: var(--secondary-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 15px;
+    color: var(--text-color);    
+}
+
+.hero-box .hero-content a:hover {
+    background-color: #f0ce0f;
+}
+
+.hero-box .hero-image {
+    scale: 0.9;
+}
+/* Hero End */
